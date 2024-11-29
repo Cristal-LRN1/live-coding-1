@@ -1,0 +1,20 @@
+// Escribe tu código aquí.
+function palabrasLargas(refString,palabrasArray){
+    return palabrasArray.filter(palabra => palabra.length > refString.length);
+}
+    const myArray = ['insecto', 'bootcamp', 'mangos', 'reptil', 'mosca', 'escritorio'];
+    const result = palabrasLargas('insecto',myArray);
+    console.log(result);
+
+function printArray(stringsArray){
+    let ul = document.createElement('ul');
+
+    for (let i = 0; i < stringsArray.length; i++) {
+        let li = document.createElement('li');
+        li.textContent = stringsArray[i]; 
+        ul.appendChild(li);
+    }
+    // Agregar el <ul> al body del documento
+
+    document.body.appendChild(ul);
+}
